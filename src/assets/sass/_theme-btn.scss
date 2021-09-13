@@ -1,0 +1,22 @@
+.theme-btn {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: .8125rem;
+        line-height: 19px;
+        text-align: right;
+        letter-spacing: 2.5px;
+        color: $queen-blue;
+        padding: 9px 0;
+        text-transform: uppercase;
+
+        span {
+          padding-right: 8px;
+        }
+
+        img {
+          padding-left: 8px;
+        }
+
+}

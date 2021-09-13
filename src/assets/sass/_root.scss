@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+h6, 
+p, 
+button {
+    margin: 0; 
+    padding: 0
+}
+
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9375rem;
+    line-height: 25px;
+}
+
+
+
+#app {
+    background-color: $ghost-white;
+    padding: 0 24px;
+}
