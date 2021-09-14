@@ -1,0 +1,62 @@
+.user-card {
+    padding: 32px 24px;
+    margin-top: 16px;
+    background: $white-1;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+
+
+    &__user-id {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+
+        &--img-container {
+            position: relative;
+            
+
+            img {
+                width: 100%;
+                max-width: 70px;
+                border: 0;
+                border-radius: 50%;
+            }
+        }
+
+        &--user-info {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            #name {
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 24px;
+                color: $gunmetal;
+            }
+
+            #username {
+                font-size: .8125rem;
+                line-height: 19px;
+                color: $azure;
+            }
+
+            #date {
+                font-size: .8125rem;
+                line-height: 19px;
+                color: $slate-gray;
+                padding-top: 6px;
+            }
+        }
+    }
+
+
+    &__user-description{
+        font-size: 13px;
+        line-height: 25px;
+        color: $queen-blue;
+        padding-top: 33px;
+    }
+
+}
