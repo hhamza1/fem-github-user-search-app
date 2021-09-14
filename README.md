@@ -30,7 +30,7 @@ The users should be able to:
 ### Screenshot
 
 #### Mobile View - Light
-![Mobile View](./screenshots/mobile-view-light.png)
+![Mobile View](./screenshots/mobile-vew-light.png)
 
 #### Tablet View
 ![Tablet View](./screenshots/tablet-view.png)
