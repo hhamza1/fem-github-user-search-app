@@ -13,7 +13,7 @@ h4,
 h5,
 h6, 
 p, 
-button {
+button, ul, li {
     margin: 0; 
     padding: 0
 }
@@ -30,4 +30,15 @@ body {
 #app {
     background-color: $ghost-white;
     padding: 0 24px;
+}
+
+footer {
+    padding: 10px;
+    font-size: .6875rem;
+    text-align: center;
+
+    a, a:active, a:visited {
+        text-decoration: none;
+        color: $queen-blue;
+    }
 }

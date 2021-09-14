@@ -29,8 +29,8 @@ The users should be able to:
 
 ### Screenshot
 
-#### Mobile View
-![Mobile View](./screenshots/mobile-view.png)
+#### Mobile View - Light
+![Mobile View](./screenshots/mobile-view-light.png)
 
 #### Tablet View
 ![Tablet View](./screenshots/tablet-view.png)

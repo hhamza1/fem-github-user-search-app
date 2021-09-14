@@ -14,17 +14,20 @@
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
       </p>
       <UserStats />
+      <UserDetails />
   </div>
 </template>
 
 <script>
 
 import UserStats from './UserStats.vue'
+import UserDetails from './UserDetails.vue'
 
 export default {
   name: 'UserCard',
   components: {
-    UserStats
+    UserStats,
+    UserDetails
   }
 }
 </script>
