@@ -10,11 +10,21 @@
           <li id="date">Joined 25 Jan 2011</li>
         </ul>
       </div>
-    </div>
+      <p class="user-card__user-description">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+      </p>
+      <UserStats />
+  </div>
 </template>
 
 <script>
+
+import UserStats from './UserStats.vue'
+
 export default {
-  name: 'UserCard'
+  name: 'UserCard',
+  components: {
+    UserStats
+  }
 }
 </script>

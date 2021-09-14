@@ -1,0 +1,29 @@
+.user-stats {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    background-color: $ghost-white;
+    padding: 18px 15px;
+    border-radius: 10px;
+
+    table {
+
+        width: 100%;
+        
+        th {
+            font-weight: 400;
+            font-size: .6875rem;
+            line-height: 16px;
+            color: $queen-blue;
+        }
+
+        td{
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $gunmetal;
+        }
+    }
+}
