@@ -29,7 +29,7 @@ export default {
     }
   },
   async mounted () {
-    const res = await fetch('https://api.github.com/users/octacat')
+    const res = await fetch('https://api.github.com/users/ocatcat')
     const data = await res.json()
     this.user = data
     console.log(this.user)
