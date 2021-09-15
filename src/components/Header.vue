@@ -1,7 +1,12 @@
 <template>
   <div id="header">
-    <h2 class="appName">devfinder {{isDark}}</h2>
-    <ThemeButton @click="toggleTheme(isDark)" />
+    <h2 class="appName">devfinder</h2>
+    <ThemeButton
+      :isDark=isDark
+      :btnTag=btnTag
+      :icon=icon
+      @click="toggleTheme()"
+    />
   </div>
 </template>
 
@@ -11,14 +16,13 @@ import ThemeButton from './ThemeButton.vue'
 
 export default {
   name: 'Header',
+  props: ['isDark', 'btnTag', 'icon'],
   components: {
     ThemeButton
   },
-  props: ['isDark'],
   methods: {
     toggleTheme (isDark) {
-      this.$emit('click', !isDark)
-      console.log(isDark)
+      this.$emit('toggle-theme', !isDark)
     }
   }
 }
