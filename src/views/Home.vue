@@ -1,7 +1,9 @@
 <template>
-  <Header />
+  <Header v-model="isDark"/>
   <SearchInputGroup />
-  <UserCard />
+  <UserCard
+    :user=user
+  />
   <Footer/>
 </template>
 
@@ -19,6 +21,18 @@ export default {
     SearchInputGroup,
     UserCard,
     Footer
+  },
+  data () {
+    return {
+      user: [],
+      isDark: false
+    }
+  },
+  async mounted () {
+    const res = await fetch('https://api.github.com/users/octatcat')
+    const data = await res.json()
+    this.user = data
+    console.log(this.user)
   }
 }
 </script>

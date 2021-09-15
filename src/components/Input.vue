@@ -2,7 +2,7 @@
   <input
     type="search"
     class="searchInput"
-    name="username"
+    v-model="username"
     id="username"
     placeholder="Search GitHub username…"
   >
@@ -10,6 +10,28 @@
 
 <script>
 export default {
-  name: 'Input'
+  name: 'Input',
+  methods: {
+    handleSubmit () {
+      console.log(this.username)
+    }
+  },
+  data () {
+    return {
+      username: ''
+    }
+  },
+  props: ['modelValue'],
+  computed: {
+    inputValue: {
+      get () {
+        return this.modelValue
+      },
+      set (value) {
+        console.log(value)
+        this.$emit('update:modelValue', value)
+      }
+    }
+  }
 }
 </script>

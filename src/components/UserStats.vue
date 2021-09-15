@@ -7,9 +7,9 @@
         <th>Following</th>
       </tr>
       <tr>
-        <td>8</td>
-        <td>3938</td>
-        <td>9</td>
+        <td>{{repos}}</td>
+        <td>{{followers}}</td>
+        <td>{{following}}</td>
       </tr>
     </table>
   </div>
@@ -17,6 +17,7 @@
 <script>
 
 export default {
-  name: 'UserStats'
+  name: 'UserStats',
+  props: ['repos', 'followers', 'following']
 }
 </script>
