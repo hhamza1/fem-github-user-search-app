@@ -28,7 +28,7 @@
       <li v-bind:class="(company===''||company==null?'not-available':'')">
         <img src="../assets/images/icon-company.svg" alt="Company">
         <span>{{
-          (company === '' || company == null?'Not Available':`<a href=${company}>My website</a>`)}}</span>
+          (company === '' || company == null?'Not Available':`@${company}`)}}</span>
       </li>
     </ul>
   </div>
