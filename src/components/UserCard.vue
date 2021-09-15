@@ -3,7 +3,7 @@
   <div class="user-card">
       <div class="user-card__user-id">
         <div class="user-card__user-id--img-container">
-        <img v-bind:src=user.avatar_url>
+        <img :src=user.avatar_url>
         </div>
         <ul class="user-card__user-id--user-info">
           <li id="name">
