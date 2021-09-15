@@ -1,11 +1,11 @@
 <template>
-  <div id="search-input-group">
+  <form id="search-input-group" @submit="handleSubmit">
     <label for="username">
       <img src="../assets/images/icon-search.svg" alt="search icon">
     </label>
     <Input />
     <CustomBtn />
-  </div>
+  </form>
 </template>
 
 <script>

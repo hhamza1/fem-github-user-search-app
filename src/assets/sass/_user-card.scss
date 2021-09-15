@@ -9,11 +9,13 @@
     &__user-id {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+
 
 
         &--img-container {
-            position: relative;
+            padding: 0 20px;
+            margin-left: -20px;
             
 
             img {
