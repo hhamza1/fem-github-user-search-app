@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <div  :class="(!isDark?'':'dark-theme')" id="header">
     <h2 class="appName">devfinder</h2>
     <ThemeButton
       :isDark=isDark
