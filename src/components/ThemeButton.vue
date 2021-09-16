@@ -1,12 +1,16 @@
 <template>
   <a href="#" class="theme-btn">
-    <span>Dark</span>
-    <img src="../assets/images/icon-moon.svg">
+    <span>
+      {{btnTag}}
+    </span>
+    <img :src=icon>
   </a>
 </template>
 
 <script>
 export default {
-  name: 'ThemeButton'
+  name: 'ThemeButton',
+  props: ['btnTag', 'isDark', 'icon']
+
 }
 </script>

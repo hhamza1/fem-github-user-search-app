@@ -4,7 +4,7 @@
       <img src="../assets/images/icon-search.svg" alt="search icon">
     </label>
     <input
-      type="search"
+      type="text"
       class="searchInput"
       name='username'
       v-model='username'
