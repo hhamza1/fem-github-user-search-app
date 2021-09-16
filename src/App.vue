@@ -1,18 +1,20 @@
-<template>
-  <Header
-    @toggle-theme='toggleTheme'
-    :isDark=isDark
-    :btnTag=btnTag
-    :icon=icon
-  />
-  <SearchInputGroup
-    @search-username='searchUsername'
-  />
-  <UserCard
-    :user=user
-    v-show='isloaded'
-  />
-  <Footer/>
+<template >
+  <div :class="(!isDark)?'container':'container container--dark-theme'">
+    <Header
+      @toggle-theme='toggleTheme'
+      :isDark=isDark
+      :btnTag=btnTag
+      :icon=icon
+    />
+    <SearchInputGroup
+      @search-username='searchUsername'
+    />
+    <UserCard
+      :user=user
+      v-show='isloaded'
+    />
+    <Footer/>
+  </div>
 </template>
 
 <script>

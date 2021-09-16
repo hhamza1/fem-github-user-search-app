@@ -25,21 +25,80 @@ body {
     line-height: 25px;
 }
 
-
-
 #app {
+}
+
+
+.container{
     background-color: $ghost-white;
     padding: 0 24px;
     min-height: 100vh;
-}
+    @include themeTransition;
 
-footer {
-    padding: 10px;
-    font-size: .6875rem;
-    text-align: center;
 
-    a, a:active, a:visited {
-        text-decoration: none;
-        color: $queen-blue;
+    footer {
+        padding: 10px;
+        font-size: .6875rem;
+        text-align: center;
+    
+        a, a:active, a:visited {
+            text-decoration: none;
+            color: $queen-blue;
+        }
+    }
+
+    &--dark-theme {
+        background-color: $dark-gunmetal;
+        color: $white-1;
+        @include themeTransition;
+
+        .theme-btn{
+            color: $white-1;
+        }
+        #search-input-group {
+            background-color: $yankee-blue;
+            @include themeTransition;
+
+            .searchInput, .searchInput::placeholder {
+                color: $white-1;
+                @include themeTransition;
+            }
+        }
+        .user-card {
+            background-color: $yankee-blue;
+            @include themeTransition;
+
+            .user-stats {
+                background-color: $dark-gunmetal;
+                @include themeTransition;
+                table th, table td {
+                    color: $white-2;
+                }
+            }
+
+            #name, #date, &__user-description {
+                color: $white-1;
+            }
+
+            .user-details {
+                li {
+                    color: $white-2;
+                }
+
+                img {
+                    filter: brightness(0) invert(1);
+
+                }
+            }
+
+
+
+            
+        }
     }
 }
+
+
+
+
+
