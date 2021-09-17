@@ -10,6 +10,7 @@
         color: $queen-blue;
         padding: 9px 0;
         text-transform: uppercase;
+        @include themeTransition;
 
         span {
           padding-right: 8px;
@@ -17,6 +18,12 @@
 
         img {
           padding-left: 8px;
+        }
+
+
+
+        &:hover{
+          filter: contrast(175%) brightness(3%);
         }
 
 }
