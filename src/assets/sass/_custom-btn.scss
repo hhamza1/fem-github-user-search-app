@@ -7,5 +7,10 @@
     font-family: inherit;
     font-weight: 700;
     color: $white-2;
-    cursor: pointer
+    cursor: pointer;
+    @include themeTransition;
+
+    &:hover {
+        background-color: #60ABFF;
+    }
 }
