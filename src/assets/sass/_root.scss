@@ -25,9 +25,6 @@ body {
     line-height: 25px;
 }
 
-#app {
-}
-
 
 .container{
     background-color: $ghost-white;
@@ -99,6 +96,35 @@ body {
 }
 
 
+@include tablet {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
 
+        
+        > * {
+            max-width: 573px;
+            width: 100%;
+        }
+
+        .user-details ul{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: center;
+            align-items: center;
+
+            
+            #website {
+                order: 2
+            }
+            #company {
+                order: 4
+            }
+        }
+    }
+}
 
 
