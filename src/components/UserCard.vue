@@ -18,7 +18,7 @@
           </li>
           <li id="date">
             {{
-              (user.joined==null?"Not Available":convertDate(user.joined))
+              (user.created_at==null?"Not Available":`Joined ${dateConverter(user.created_at)}`)
             }}
           </li>
         </ul>
@@ -53,6 +53,16 @@ export default {
     UserStats,
     UserDetails
   },
-  props: ['user']
+  props: ['user'],
+  methods: {
+    dateConverter (date) {
+      if (date) {
+        var newDate = new Date(date)
+        return newDate.toDateString()
+      } else {
+        return 'No Date Available'
+      }
+    }
+  }
 }
 </script>
