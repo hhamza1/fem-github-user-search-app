@@ -17,3 +17,10 @@
         padding-left: 10px;
     }
 }
+
+
+@include tablet {
+    .searchInput, .searchInput::placeholder {
+        font-size: 1.125rem;
+    }
+}

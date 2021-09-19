@@ -27,3 +27,20 @@
         }
     }
 }
+
+@include tablet {
+    .user-stats {
+        table {
+
+            th {
+                font-size: .8125rem;
+            }
+
+            td {
+                font-size: 1.375rem;
+            }
+
+
+        }
+    }
+}

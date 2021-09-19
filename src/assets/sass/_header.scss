@@ -5,8 +5,14 @@
     margin-bottom: 18px;
 
     .appName {
-        flex-grow: 5;
-        
+        flex-grow: 5;  
     }
 
+}
+
+
+@include tablet {
+    #header .appName{
+        font-size: 1.625rem;
+    }
 }
