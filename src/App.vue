@@ -8,6 +8,7 @@
     />
     <SearchInputGroup
       @search-username='searchUsername'
+      :errorMessage = errorMessage
     />
     <UserCard
       :user=user
@@ -63,6 +64,7 @@ export default {
       if (data.message == null || data.message === undefined) {
         this.user = data
         this.isloaded = res.ok
+        this.errorMessage = ''
       } else { this.errorMessage = data.message }
     },
     toggleTheme () {
@@ -74,6 +76,9 @@ export default {
         this.btnTag = 'dark'
         this.icon = moon
       }
+    },
+    visitorColorTheme () {
+
     }
   }
 }

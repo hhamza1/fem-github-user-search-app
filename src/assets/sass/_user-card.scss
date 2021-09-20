@@ -58,3 +58,27 @@
     }
 
 }
+
+@include tablet {
+    .user-card {
+       &__user-id {
+        &--user-info {
+            #name {
+                font-size: 1.625rem;
+                padding-bottom: 4px;
+            }
+            #username {
+                font-size: 1rem;
+            }
+            #date {
+                padding-top: 4px;
+                font-size: .9375rem;
+            }
+        }
+       }
+
+       &__user-description {
+           font-size: .9375rem;
+       }
+    }
+}

@@ -10,6 +10,8 @@
       v-model='username'
       placeholder="Search GitHub username…"
     >
+    <span class='errorMessage' v-if="errorMessage.length > 0">No results</span>
+    <span v-else ></span>
     <CustomBtn/>
   </form>
 </template>
@@ -20,6 +22,7 @@ import CustomBtn from './CustomBtn.vue'
 
 export default {
   name: 'SearchInputGroup',
+  props: ['errorMessage'],
   components: {
     CustomBtn
   },

@@ -27,7 +27,11 @@
     .not-available {
         opacity: 0.5;
     }
-
-
     
+}
+
+@include tablet {
+    .user-details {
+        font-size: .9375rem;
+    }
 }
