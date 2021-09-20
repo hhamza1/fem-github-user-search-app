@@ -58,7 +58,7 @@ export default {
     dateConverter (date) {
       if (date) {
         var newDate = new Date(date)
-        return newDate.toDateString()
+        return newDate.toDateString().slice(4)
       } else {
         return 'No Date Available'
       }
