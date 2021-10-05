@@ -82,3 +82,37 @@
        }
     }
 }
+
+@include desktop {
+    .user-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        &__user-id {
+            grid-column: 1 / 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+
+            &--img-container {
+                justify-self: center;
+                img {
+                    width: 100%;
+                    max-width: 117px;
+                }
+            }
+
+            &--user-info{
+                display: flex;
+                flex-direction: row;
+            }
+
+
+        }
+
+        &__user-description, .user-stats, .user-details {
+            grid-column: 2 / 4;
+            padding-top: 0;
+        }
+    }
+}
