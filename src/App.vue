@@ -55,6 +55,7 @@ export default {
       this.user = data
       this.isloaded = res.ok
     } else { this.errorMessage = data.message }
+    console.log(window.matchMedia('dark-theme'))
   },
 
   methods: {
@@ -78,7 +79,6 @@ export default {
       }
     },
     visitorColorTheme () {
-
     }
   }
 }

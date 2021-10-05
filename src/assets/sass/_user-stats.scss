@@ -44,3 +44,9 @@
         }
     }
 }
+
+@include desktop {
+    .user-stats {
+        margin-top: 0;
+    }
+}

@@ -19,9 +19,23 @@
 
     .errorMessage {
         color: #F74646;
-        font-size: .9375rem;
-        padding-right: 24px;
+        font-size: .6rem;
         font-weight: 700;
+        padding-right: 2px;
+        transition: all .3s ease-in-out;
+        line-height: 10px;
         @include themeTransition;
+    }
+}
+
+
+@include tablet {
+    #search-input-group {
+        .errorMessage {
+            color: #F74646;
+            font-size: .9375rem;
+            padding-right: 24px;
+            @include themeTransition;
+        }
     }
 }

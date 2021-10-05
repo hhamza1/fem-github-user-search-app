@@ -35,3 +35,10 @@
         font-size: .9375rem;
     }
 }
+
+@include desktop {
+    .user-details ul {
+        display: grid;
+        width: 100%;
+    }
+}
